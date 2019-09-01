@@ -1,44 +1,215 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="sebastarea" />
-		<Option execution_dir="C:/Users/Sebastian Paz/Documents/Sebastian Paz/helloworld/sebastarea/" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/sebastarea" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/sebastarea" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-			<Add option="-fexceptions" />
-		</Compiler>
-		<Unit filename="../../Users/Sebastian Paz/Documents/sebastarea/main.cpp" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-			<lib_finder disable_auto="1" />
-		</Extensions>
-	</Project>
-</CodeBlocks_project_file>
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+/*
+{
+    float a;
+    float b;
+    b=1.0;
+
+    cout <<"dame un numero: ";
+    cin >>a;
+
+    while(a>b){
+        b*=2;
+    }
+
+if(a==b)
+    cout<<"el numero es potencia de 2"<<endl;
+else
+    cout<<"el numero no es potencia de 2"<<endl;
+
+
+    return 0;
+
+}
+
+
+
+{
+    int num;
+    int numd=0;
+
+    cout << "dame un numero: ";
+    cin >>num;
+    for(int i=1;i<=num;i++){
+
+    if(num%i==0)
+
+    numd+=1;
+
+
+    }
+
+    if (numd==2)
+
+        cout<<"el numero es primo ";
+
+    else
+
+        cout<<"el numero no es primo ";
+
+
+
+    return 0;
+
+}
+
+
+
+{
+    int i=1;
+    int num;
+    int numd=0; //contador
+
+    cout << "dame un numero: ";
+    cin >>num;
+    while (i<=num){
+
+    if(num%i==0)
+
+    numd+=1;
+    i++;
+
+    }
+
+    if (numd==2)
+
+        cout<<"el numero es primo ";
+
+    else
+
+        cout<<"el numero no es primo ";
+
+
+
+    return 0;
+
+}
+
+
+
+{
+    int cont=0;
+    for(int num=2;num<=100;num++){
+
+        for (int i=2;i<=num;i++)
+
+            if (num%i==0)
+        cont++;
+        if(cont==1)
+
+         cout<<" "<<num;
+
+        cont=0;
+    }
+    return 0;
+
+}
+
+
+
+{
+    int cont=0;
+    int num=2;
+    int i=2;
+    while (num<100){
+    num++;
+
+        while(i<=num){
+            i++;
+}
+            if (num%i==0){
+        cont++;
+
+}
+        if(cont==1){
+        cont++;
+        }
+         cout<<" "<<num;
+        }
+        cont=0;
+    return 0;
+}
+
+
+
+
+
+
+{
+    int a;
+    int div=0;
+
+    cout <<"dame un numero: ";
+    cin >>a;
+    for(int i=1;i<a;i++){
+        if (a%i==0)
+            div+=i;
+        }
+
+        if (a==div)
+            cout <<"es perfecto "<<endl;
+        else
+            cout <<"no es perfecto "<<endl;
+
+
+    return 0;
+
+}
+
+
+
+
+{
+    int a;
+    int div=0;
+    int i=1;
+
+    cout <<"dame un numero: ";
+    cin >>a;
+    while(i<a) {
+
+
+
+        if (a%i==0)
+            div+=i;
+        i++;
+        }
+
+        if (a==div)
+            cout <<"es perfecto "<<endl;
+        else
+            cout <<"no es perfecto "<<endl;
+
+
+    return 0;
+
+}
+*/
+
+{
+    int cont=0;
+    int num=2;
+    int i=2;
+    while (num<100){
+
+        while(i<=num){
+
+            if (num%i==0)
+            cont++;
+            num++;
+
+        }
+        }
+
+        if(cont==2)
+
+         cout<<" "<<num;
+                 cont=0;
+    return 0;
+}
+
+
