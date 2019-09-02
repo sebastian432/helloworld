@@ -3,7 +3,7 @@
 using namespace std;
 
 int main()
-/*
+// ejercicio 1
 {
     float a;
     float b;
@@ -27,7 +27,7 @@ else
 }
 
 
-
+// ejercicio 2
 {
     int num;
     int numd=0;
@@ -90,7 +90,7 @@ else
 }
 
 
-
+// ejercicio 3
 {
     int cont=0;
     for(int num=2;num<=100;num++){
@@ -138,7 +138,7 @@ else
 
 
 
-
+// ejercicio 4
 {
     int a;
     int div=0;
@@ -188,7 +188,7 @@ else
     return 0;
 
 }
-*/
+
 
 {
     int cont=0;
@@ -211,5 +211,3 @@ else
                  cont=0;
     return 0;
 }
-
-
