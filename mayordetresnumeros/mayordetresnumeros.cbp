@@ -1,43 +1,75 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="mayordetresnumeros" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/mayordetresnumeros" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/mayordetresnumeros" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-			<Add option="-fexceptions" />
-		</Compiler>
-		<Unit filename="main.cpp" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-			<lib_finder disable_auto="1" />
-		</Extensions>
-	</Project>
-</CodeBlocks_project_file>
+#include <iostream>
+
+using namespace std;
+/*
+void imprimirDigitos(int n){
+    cout << n/10000<<'\t';
+    n%=10000;
+    cout << n/1000<<'\t';
+    n%=1000;
+    cout << n/100<<'\t';
+    n%=100;
+    cout << n/10<<'\t';
+    n%=10;
+    cout<<n<< '\t';
+
+}
+int main(){
+    int n;
+    cin>>n;
+    imprimirDigitos(n);
+    return 0;
+
+}
+
+
+
+int contarNumeros(int n,int cont=0){
+    while(n!=0){
+        n/=10;
+        cont++;
+    }
+    cout<<"el numero de digitos es: "<<cont<<endl;
+    return 0;
+
+}
+int main(){
+    int cont=0;
+    int n;
+    cout<<"ingresa un numero: ";cin>>n;
+    contarNumeros(n);
+    return 0;
+
+}
+*/
+bool esPalindromo(int n)
+{
+    int a,b,c,d,e;
+    a=n/10000;
+        a%=10000;
+    b=n/1000;
+        b%=1000;
+    n/100;
+        c%=100;
+    n/10;
+        d%=10;
+        e=n;
+
+    if (a==e && b==d)
+        return true;
+    else
+        return false;
+
+
+}
+int main(){
+    int n;
+    cout<<"introduce un numero: ";cin>>n;
+    cout<<esPalindromo(n)<<endl;
+    return 0;
+}
+
+
+
+
+
