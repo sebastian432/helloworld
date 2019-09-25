@@ -81,11 +81,14 @@ int main(){
 int main(){
     long long num=600851475143;
 
-    for(int i=2;num>1;i++){
+    for(int i=2;i<=num;i++){
         while(num%i==0){
-            cout<<i<<endl;
-    num/=i;
+            num/=i;
+            cout<<"sus factores primos son: "<<i<<endl;
         }
+
     }
 return 0;
 }
+
+
