@@ -57,26 +57,39 @@ int main(){
 
 //invertir un arreglo
 
-void swap(int &x, int &y){
-    int v=y/2;
-    y=1;
-    for (int i=0;i<v;i++){
-        int c=x[i];
-        x[i]=x[y];
-        x[y--]=c;
-    }
-}
+void imprimir(int arr[], int tam)
+            {
+                for(int i = 0; i < tam; i++)
+                    cout << arr[i] << " ";
+                    cout << endl;
+            }
 
-int main(){
+            int swap(int &x, int &y){
+                        int temp = x;
+                            x = y;
+                            y = temp;
+            }
 
-    int x[5];
-    for (int i=0;i<5;i++){
-        cout<<"ingrese los numeros del arreglo: ";
-        cin>>x[i];
-    }
-    swap(x,5)
+            int invertir(int arr[], int tam)
+            {
+                for(int i = 0; i < tam/2; i++){
+            swap(arr[i], arr[tam-1-i]);
+                }
+            }
 
-}
+            int main()
+            {
+                int arr[5] = {1, 2, 3, 4, 5};
+
+            int a = 5;
+            int b = 10;
+            swap(a,b);
+            cout << a << " " << b << endl;
+
+            imprimir(arr, 5);
+            invertir(arr, 5);
+            imprimir(arr, 5);
+            }
 
 
 //ordenamiento burbuja
