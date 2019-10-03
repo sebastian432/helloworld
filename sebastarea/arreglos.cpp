@@ -90,34 +90,34 @@ imprimir(arr, 4);
 //ordenamiento burbuja
 
 
+int main()
+{
+    int n;
+    cout<<"cuantos elementos quieres en tu arreglo?: ";
+    cin>>n;
+    int arr[n],i,j;
+    cout<<"entra los valores:\n";
 
-int burbuja(int arr[],int tam){
-    int temp;
-        for (int i=0;i<tam;i++){
-            for(int j=0;j<(tam-1);j++){
-                if (arr[j] > arr[j+1]){
-                    temp=arr[j];
-                    arr[j]=arr[j+1];
-                    arr[j+1]=temp;
-                }
-
+    for(i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    for(i=0;i<n-1;i++)
+    {
+        for(j=0;j<n-i-1;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
             }
-            for(i=0;i<tam;i++){
-            cout<<arr[i]<<endl;
         }
-        }
-
-}
-
-int main(){
-    int tam;
-    cout<<"cuantos valores deseas?: ";
-    cin>>tam;
-    int x[tam];
-    for (int i=0;i<tam;i++){
-        cout<<"ingrese los numeros del arreglo: ";
-        cin>>x[i];
-    }cout<<burbuja(x,tam)<<endl;
+    }
+    cout<<"El ordenamiento burbuja da como resultado:\n";
+    for(i=0;i<n;i++)
+    cout<<arr[i]<<" ";
+    return 0;
 }
 
 
